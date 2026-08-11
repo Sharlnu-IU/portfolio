@@ -6,11 +6,7 @@ const BackToTop: React.FC = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 400) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 400);
     };
 
     window.addEventListener('scroll', toggleVisibility);
@@ -20,13 +16,14 @@ const BackToTop: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   };
 
   return (
     <button
       onClick={scrollToTop}
+      className="back-to-top"
       style={{
         position: 'fixed',
         bottom: '2rem',
@@ -35,30 +32,33 @@ const BackToTop: React.FC = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        width: '3.5rem',
-        height: '3.5rem',
-        borderRadius: '50%',
-        background: 'var(--accent-gradient)',
-        color: 'white',
+        width: '3rem',
+        height: '3rem',
+        borderRadius: '0.35rem',
+        background: 'var(--accent-color)',
+        color: '#FFFEFB',
         border: 'none',
-        boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4)',
+        boxShadow: '0 8px 20px rgba(27, 42, 74, 0.2)',
         cursor: 'pointer',
-        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        transition:
+          'opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1), transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease',
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.8)',
+        transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(16px) scale(0.92)',
         pointerEvents: isVisible ? 'auto' : 'none',
       }}
       aria-label="Back to top"
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'translateY(-5px) scale(1.05)';
-        e.currentTarget.style.boxShadow = '0 8px 25px rgba(59, 130, 246, 0.6)';
+        if (!isVisible) return;
+        e.currentTarget.style.transform = 'translateY(-4px) scale(1.03)';
+        e.currentTarget.style.boxShadow = '0 12px 28px rgba(27, 42, 74, 0.28)';
       }}
       onMouseLeave={(e) => {
+        if (!isVisible) return;
         e.currentTarget.style.transform = 'translateY(0) scale(1)';
-        e.currentTarget.style.boxShadow = '0 4px 15px rgba(59, 130, 246, 0.4)';
+        e.currentTarget.style.boxShadow = '0 8px 20px rgba(27, 42, 74, 0.2)';
       }}
     >
-      <FiArrowUp size={24} />
+      <FiArrowUp size={20} />
     </button>
   );
 };

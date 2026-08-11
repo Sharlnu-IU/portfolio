@@ -4,30 +4,67 @@ const About: React.FC = () => {
   return (
     <section id="about" className="section">
       <div className="container">
-        <h2 className="heading-lg reveal">About <span className="text-gradient">Me</span></h2>
-        
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
-          <div className="reveal reveal-delay-1 glass-card">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'white' }}>Background</h3>
-            <p style={{ color: 'var(--text-secondary)', marginBottom: '1rem' }}>
-              I am a Full-stack software engineer with 2+ years of enterprise experience at IQVIA and currently pursuing my M.S. in Computer Science at Indiana University Bloomington.
-            </p>
+        <h2 className="heading-lg reveal">
+          About <span className="heading-accent">me</span>
+        </h2>
+
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '1.5rem',
+          }}
+        >
+          <div className="reveal reveal-delay-1 surface">
+            <h3
+              style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: '1.35rem',
+                marginBottom: '1rem',
+                fontWeight: 600,
+              }}
+            >
+              Background
+            </h3>
             <p style={{ color: 'var(--text-secondary)' }}>
-              My expertise lies in building RESTful microservices and cloud-deployed systems using Java, Spring Boot, Python, and Angular/TypeScript. I have hands-on experience across containerized deployments and data/ML tooling.
+              Full-stack software engineer with 2+ years of enterprise experience at IQVIA,
+              shipping Argus and Cognos modules for pharmaceutical clients — leading migrations,
+              optimizing SQL workflows, and owning delivery from development through production.
+              Holding a Master’s degree in Computer Science from Indiana University Bloomington,
+              I specialize in distributed backend systems, microservices architecture, and cloud
+              deployment. My core stack spans Java, Spring Boot, Python, TypeScript, REST APIs,
+              Docker, Kubernetes, and relational/NoSQL databases.
             </p>
           </div>
-          
-          <div className="reveal reveal-delay-2 glass-card">
-            <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'white' }}>Education</h3>
+
+          <div className="reveal reveal-delay-2 surface">
+            <h3
+              style={{
+                fontFamily: 'var(--font-display)',
+                fontSize: '1.35rem',
+                marginBottom: '1rem',
+                fontWeight: 600,
+              }}
+            >
+              Education
+            </h3>
             <div style={{ marginBottom: '1.5rem' }}>
-              <h4 style={{ color: 'var(--accent-color)' }}>Indiana University Bloomington</h4>
-              <p style={{ color: 'white', fontWeight: 500 }}>Master of Science, Computer Science</p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Aug 2024 - May 2026 | GPA: 3.76/4.0</p>
+              <h4 style={{ color: 'var(--accent-color)', fontWeight: 600 }}>
+                Indiana University Bloomington
+              </h4>
+              <p style={{ fontWeight: 500 }}>Master of Science, Computer Science</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                Aug 2024 – May 2026 · GPA 3.76/4.0
+              </p>
             </div>
             <div>
-              <h4 style={{ color: 'var(--accent-color)' }}>Visvesvaraya Technological University</h4>
-              <p style={{ color: 'white', fontWeight: 500 }}>Bachelor of Engineering, ISE</p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Aug 2018 - Jul 2022 | GPA: 8.59/10.0</p>
+              <h4 style={{ color: 'var(--accent-color)', fontWeight: 600 }}>
+                Visvesvaraya Technological University
+              </h4>
+              <p style={{ fontWeight: 500 }}>Bachelor of Engineering, Information Science</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+                Aug 2018 – Jul 2022 · GPA 8.59/10.0
+              </p>
             </div>
           </div>
         </div>
