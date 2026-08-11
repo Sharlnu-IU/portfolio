@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
         <div className="reveal reveal-delay-3 glass-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', padding: '3rem 2rem', background: 'var(--accent-gradient)', borderColor: 'transparent' }}>
           <h3 style={{ fontSize: '1.75rem', color: 'white' }}>Grab My Resume</h3>
           <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>Get a detailed overview of my experience, skills, and education.</p>
-          <a href="/Sharath_Resume_2P.pdf" target="_blank" className="btn" style={{ background: 'white', color: 'var(--bg-base)' }}>
+          <a href="/Sharath_Resume_2P.pdf" target="_blank" className="btn-primary" style={{ background: 'white', color: 'var(--bg-base)', boxShadow: '0 4px 15px rgba(255,255,255,0.2)' }}>
             <FiDownload size={20} /> Download PDF
           </a>
         </div>

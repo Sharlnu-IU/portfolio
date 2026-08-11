@@ -66,8 +66,8 @@ const Projects: React.FC = () => {
           ))}
         </div>
         
-        <div className="reveal" style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
-          <a href="https://github.com/Sharlnu-IU?tab=repositories" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.75rem 2rem', fontSize: '1.05rem', background: 'rgba(255, 255, 255, 0.03)' }}>
+        <div className="reveal" style={{ display: 'flex', justifyContent: 'center', margin: '3rem 0' }}>
+          <a href="https://github.com/Sharlnu-IU?tab=repositories" target="_blank" rel="noreferrer" className="btn-outline" style={{ padding: '0.75rem 2rem', fontSize: '1.05rem', background: 'rgba(255, 255, 255, 0.03)' }}>
             View All Projects on GitHub <FiArrowUpRight size={20} />
           </a>
         </div>

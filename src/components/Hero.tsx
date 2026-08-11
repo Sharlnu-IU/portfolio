@@ -17,10 +17,10 @@ const Hero: React.FC = () => {
         </p>
         
         <div className="reveal reveal-delay-3" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <a href="#projects" className="btn btn-primary">
+          <a href="#projects" className="btn-primary">
             View My Work <FiArrowRight size={20} />
           </a>
-          <a href="/Sharath_Resume_2P.pdf" target="_blank" className="btn btn-secondary">
+          <a href="/Sharath_Resume_2P.pdf" target="_blank" className="btn-outline">
             Download Resume
           </a>
         </div>
