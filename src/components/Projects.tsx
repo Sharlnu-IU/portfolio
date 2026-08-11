@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       <div className="container">
         <h2 className="heading-lg reveal">Featured <span className="text-gradient">Projects</span></h2>
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))', gap: '2rem' }}>
           {projects.map((project, index) => (
             <div key={index} className={`reveal reveal-delay-${(index % 3) + 1} glass-card`} style={{ display: 'flex', flexDirection: 'column' }}>
               <h3 style={{ fontSize: '1.25rem', color: 'white', marginBottom: '0.5rem' }}>{project.title}</h3>
