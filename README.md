@@ -1,31 +1,31 @@
-# Sharath - Software Engineer Portfolio
+# Sharath — Software Engineer Portfolio
 
 ![Portfolio Preview](./public/preview.png)
 
-A modern, highly aesthetic, and responsive developer portfolio built with React, Vite, and TypeScript. Designed to showcase my experience as a Full-Stack Software Engineer with a focus on clean UI/UX, glassmorphism design, and smooth scroll-driven animations.
+A responsive personal portfolio built with React, Vite, and TypeScript. It presents my work as a full-stack / software engineer — IQVIA experience, teaching roles at Indiana University, and selected projects — with a light editorial design, strong typography, and smooth scroll-driven motion.
 
-## ✨ Features
+## Features
 
-- **Modern Aesthetic**: Dark mode by default, featuring a dynamic animated mesh gradient background and premium glassmorphic UI components.
-- **Bi-Directional Scroll Animations**: Sections and cards gracefully blur and fade into view as you scroll up or down.
-- **Responsive Layout**: Fully optimized for mobile, tablet, and desktop viewing.
-- **Skill Showcase**: Integrated with `react-icons` for authentic brand representations of technical skills.
-- **Performance Optimized**: Built on Vite for lightning-fast HMR and highly optimized production builds.
+- **Editorial light theme**: Off-white paper background, deep navy accents, Fraunces for headings and IBM Plex Sans for body text
+- **Bi-directional scroll animations**: Sections fade and blur into view as you scroll up or down
+- **Responsive layout**: Optimized for mobile, tablet, and desktop (including a mobile nav drawer)
+- **Resume-aligned content**: Experience, projects with GitHub/live links, skills, and contact CTAs
+- **Vite-powered**: Fast local HMR and optimized production builds
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Framework**: React 18
-- **Build Tool**: Vite
+- **Framework**: React 19
+- **Build tool**: Vite
 - **Language**: TypeScript
-- **Styling**: Vanilla CSS (CSS Variables, Flexbox/Grid, Glassmorphism)
+- **Styling**: Vanilla CSS (CSS variables, Flexbox/Grid)
 - **Icons**: `react-icons`
+- **Lint**: oxlint
 
-## 🚀 Getting Started Locally
-
-To run this project on your local machine, follow these steps:
+## Getting Started Locally
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
 
 ### Installation
 
@@ -45,25 +45,33 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:5173`.
+4. Open [http://localhost:5173](http://localhost:5173).
 
-## 📦 Build for Production
+### Resume PDF
 
-To create a production-ready build:
+Place your resume at `public/Sharath_Resume_2P.pdf` so the Hero and Contact download buttons work locally and in production.
+
+## Build for Production
 
 ```bash
 npm run build
 ```
-This will compile the TypeScript code and bundle the React application into the `/dist` directory. You can preview the production build locally using `npm run preview`.
 
-## 🌐 Deployment (GitHub Pages)
+This type-checks with TypeScript and outputs a production bundle to `/dist`. Preview with:
 
-This project is configured out-of-the-box to be deployed easily to GitHub pages via the `vite.config.ts` base path setting (`base: './'`). 
+```bash
+npm run preview
+```
 
-1. Build the project (`npm run build`).
-2. Push the contents of the `/dist` folder to a `gh-pages` branch on your repository.
-3. Enable GitHub pages in your repository settings pointing to the `gh-pages` branch.
+## Deployment (GitHub Pages)
 
-## 📄 License
+`vite.config.ts` uses `base: './'` for relative asset paths. A GitHub Actions workflow (`.github/workflows/static.yml`) builds and deploys to GitHub Pages on pushes to `main`.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+You can also deploy manually:
+
+1. Run `npm run build`
+2. Publish the contents of `/dist` (or rely on the Actions workflow)
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
