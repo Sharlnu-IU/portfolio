@@ -1,6 +1,6 @@
 # Sharath - Software Engineer Portfolio
 
-![Portfolio Preview](./public/preview-placeholder.png) <!-- Replace with actual screenshot when deployed -->
+![Portfolio Preview](./public/preview.png)
 
 A modern, highly aesthetic, and responsive developer portfolio built with React, Vite, and TypeScript. Designed to showcase my experience as a Full-Stack Software Engineer with a focus on clean UI/UX, glassmorphism design, and smooth scroll-driven animations.
 
