@@ -3,7 +3,7 @@ import { FiArrowRight, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="section" style={{ minHeight: '100vh', paddingTop: '120px' }}>
+    <section id="hero" className="section" style={{ minHeight: '100vh' }}>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'center' }}>
         <span className="reveal" style={{ color: 'var(--accent-color)', fontWeight: 600, letterSpacing: '0.1em', marginBottom: '1rem', display: 'block' }}>
           HELLO, I'M
