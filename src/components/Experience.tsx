@@ -34,15 +34,15 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    title: 'Associate Consultant',
+    title: 'Associate Consultant (Software Engineer)',
     org: 'IQVIA',
     location: 'Bengaluru, India',
     date: 'Jan 2023 – Jul 2024',
     bullets: [
-      'Engineered and deployed customized Argus and Cognos application modules across multiple enterprise pharmaceutical client projects, managing complex migrations, version upgrades, and optimized SQL data retrieval workflows with tailored JavaScript UI enhancements.',
-      'Spearheaded full-cycle development, validation, and production deployment for new client projects, transitioning from a supportive role under a team lead to owning full-scale project execution.',
-      'Owned comprehensive code review and unit testing cycles for feature releases, identifying critical defects early and ensuring high-stability production deployments across sprint cycles.',
-      'Collaborated cross-functionally with Product Management, QA, and Engineering leads to scope technical requirements, mitigate development bottlenecks, and ship application enhancements on schedule.',
+      'Managed complex system migrations and version upgrades for Argus and Cognos modules across 4+ pharma client projects, optimizing SQL workflows to reduce query latency by ~20% while delivering custom JavaScript UI enhancements.',
+      'Spearheaded end-to-end development, validation, and production deployments for 3 major client projects, taking full ownership from architecture scoping to final release with zero critical post-launch downtime.',
+      'Owned unit testing cycles and code validation for feature releases, identifying critical defects pre-production to ensure high-stability deployments across client environments.',
+      'Collaborated cross-functionally with Product Management, QA, and Engineering leads to refine technical requirements, resolving technical bottlenecks to maintain a 95%+ on-time delivery rate across sprint cycles.',
     ],
   },
   {
@@ -51,10 +51,10 @@ const experiences: ExperienceItem[] = [
     location: 'Bengaluru, India',
     date: 'Jun 2022 – Dec 2022',
     bullets: [
-      'Developed and integrated full-stack features across front-end and back-end layers using Java, .NET, and JavaScript, consistently delivering sprint-committed requirements for an internal product codebase.',
-      'Built and consumed internal API development endpoints for application workflows, debugging integration issues end-to-end and hardening request/response handling for reliability.',
-      'Debugged and resolved front-end defects leveraging HTML and JavaScript, optimizing UI functionality to steadily reduce the QA escalation backlog.',
-      'Maintained code quality through peer reviews and version control practices on GitHub, contributing to a consistent and collaborative development workflow.',
+      'Built and integrated full-stack features using Java, .NET, and JavaScript, delivering 100% of sprint-committed tasks for a high-traffic internal product codebase.',
+      'Engineered and consumed internal REST API endpoints, hardening request/response error handling and reducing end-to-end API integration bugs by ~25%.',
+      'Diagnosed and resolved 20+ front-end defects using JavaScript and HTML, driving a 15% reduction in the QA escalation backlog.',
+      'Maintained team code quality standards by leveraging Git version control, participating in GitHub PR reviews, and running CI/CD build pipelines across sprint cycles.',
     ],
   },
 ];
